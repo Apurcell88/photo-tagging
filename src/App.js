@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import Auth from './components/Auth';
-import  { auth }  from './config/firebase';
+import Nav from './components/Nav';
 
 function App() {
   // state management
@@ -16,9 +16,10 @@ function App() {
     )
   }
 
-  console.log(auth)
   return (
-    <h1>yay</h1>
+    <Nav
+      setIsAuth={setIsAuth}
+    />
   )
 }
 
