@@ -84,3 +84,32 @@ table {
   color: white;
   font-size: 1.2rem;
 }
+
+/* -------------- NAV STYLES -------------- */
+nav {
+  height: 10vh;
+  background-color: rgb(88, 140, 238);
+}
+
+.nav-user-info-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+}
+
+.nav-user-display {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav-sign-out-btn {
+  border-radius: 5px;
+  border: none;
+  height: 1.5rem;
+  width: 4.5rem;
+  background: white;
+  
+}
