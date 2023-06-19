@@ -50,12 +50,18 @@ table {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
+  background-image: url('C:/Users/apurc/Documents/odinReact/photo-tagging/src/images/photo-tagging-homepage.jpg');
+}
+
+.sign-in-title {
+  position: absolute;
+  top: 0;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: white;
 }
 
 .sign-in-info {
-  padding: 3rem;
-  box-shadow: 1px 2px 12px 10px #2CA091;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +72,7 @@ table {
 
 .sign-in-text {
   letter-spacing: 0.3px;
+  color: rgb(88, 140, 238);
 }
 
 .sign-in-btn {
@@ -73,7 +80,7 @@ table {
   height: 2.5rem;
   border-radius: 10px;
   border: none;
-  background-color: #f2706c;
+  background-color: rgb(88, 140, 238);
   color: white;
   font-size: 1.2rem;
 }

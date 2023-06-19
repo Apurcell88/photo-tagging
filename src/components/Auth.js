@@ -19,8 +19,9 @@ const Auth = (props) => {
 
   return (
     <div className="sign-in-container">
+      <h1 className="sign-in-title">Photo Tagging App</h1>
       <div className="sign-in-info">
-        <p>Please Sign In</p>
+        <p className="sign-in-text">Please Sign In</p>
         <button
           className="sign-in-btn"
           onClick={signInWithGoogle}
