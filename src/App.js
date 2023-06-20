@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Auth from './components/Auth';
 import Nav from './components/Nav';
+import Main from './components/Main';
 
 function App() {
   // state management
@@ -19,11 +20,14 @@ function App() {
   }
 
   return (
-    <Nav
-      setIsAuth={setIsAuth}
-      count={count}
-      setCount={setCount}
-    />
+    <div>
+      <Nav
+        setIsAuth={setIsAuth}
+        count={count}
+        setCount={setCount}
+      />
+     <Main />
+    </div>
   )
 }
 

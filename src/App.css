@@ -157,3 +157,14 @@ nav {
   border-radius: 15px;
   font-size: 1.2rem;
 }
+
+/* -------------- MAIN STYLES -------------- */
+.main-img-container {
+  /* background: url('C:/Users/apurc/Documents/odinReact/photo-tagging/src/images/photo-tagging-image.jpg') no-repeat center center fixed; */
+  height: 90vh;
+  overflow: hidden;
+}
+
+.main-img {
+  height: 100%;
+}
