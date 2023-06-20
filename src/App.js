@@ -6,7 +6,9 @@ import Nav from './components/Nav';
 
 function App() {
   // state management
+
   const [isAuth, setIsAuth] = useState(false);
+  const [count, setCount] = useState(0);
 
   if (!isAuth) {
     return (
@@ -19,6 +21,8 @@ function App() {
   return (
     <Nav
       setIsAuth={setIsAuth}
+      count={count}
+      setCount={setCount}
     />
   )
 }

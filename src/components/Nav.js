@@ -1,15 +1,14 @@
-import { useEffect, useState } from 'react';
+// import { useState } from 'react';
 import { auth } from "../config/firebase";
 import { signOut } from "firebase/auth";
 
 const Nav = (props) => {
 //   console.log(auth);
-  const { setIsAuth } = props;
-
-  // STATE
-  let [count, setCount] = useState(0);
+  const { setIsAuth, count, setCount } = props;
   
   // FUNCTIONS
+
+  // Starts the timer
   const handleTimerStart = () => {
     setInterval(() => {
       setCount(prev => prev + 1)
@@ -20,7 +19,7 @@ const Nav = (props) => {
   const signOutFromGoogle = async () => {
     try {
       await signOut(auth);
-      setIsAuth(false); // comment this out and see what happens
+      setIsAuth(false);
     } catch (err) {
         console.error(err);
     }
@@ -38,8 +37,9 @@ const Nav = (props) => {
         </button>
       </div>
       <div className="nav-timer">
-        <p>{count}</p>
+        <p className="nav-user-display">{count} seconds</p>
         <button
+          className="nav-start-timer-btn"
           onClick={handleTimerStart}
         >
           Start Timer
