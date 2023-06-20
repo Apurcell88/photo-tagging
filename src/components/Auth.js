@@ -19,7 +19,8 @@ const Auth = (props) => {
 
   return (
     <div className="sign-in-container">
-      <h1 className="sign-in-title">Photo Tagging App</h1>
+      <h1 className="sign-in-title">Find<span className="us">Us</span></h1>
+      <p className="sign-in-description">A Where's Waldo style game</p>
       <div className="sign-in-info">
         <p className="sign-in-text">Please Sign In</p>
         <button

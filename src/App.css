@@ -61,6 +61,18 @@ table {
   color: white;
 }
 
+.us {
+  color: #ee9f27;
+}
+
+.sign-in-description {
+  position: absolute;
+  top: 0;
+  margin-top: 6.5rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
 .sign-in-info {
   display: flex;
   flex-direction: column;
@@ -90,7 +102,6 @@ nav {
   height: 10vh;
   background-color: rgb(88, 140, 238);
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -101,7 +112,7 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   margin-left: 1rem;
-  width: 50%;
+  width: 33%;
 }
 
 .nav-user-display {
@@ -120,10 +131,9 @@ nav {
 .nav-timer {
   margin-right: 1rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  width: 50%;
+  justify-content: flex-end;
+  width: 33%;
   height: 100%;
 }
 
@@ -132,4 +142,18 @@ nav {
   border-radius: 5px;
   height: 1.5rem;
   background: white;
+}
+
+.nav-num-characters-container {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.nav-num-characters {
+  background-color: #ee9f27;
+  padding: 0.8rem;
+  border-radius: 15px;
+  font-size: 1.2rem;
 }
