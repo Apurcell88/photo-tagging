@@ -6,10 +6,16 @@ import Nav from './components/Nav';
 import Main from './components/Main';
 
 function App() {
-  // state management
+  // STATE MANAGEMENT
 
+  // Auth state
   const [isAuth, setIsAuth] = useState(false);
+
+  // Nav state
   const [count, setCount] = useState(0);
+
+  // Main state
+  const [boxes, setBoxes] = useState([]);
 
   if (!isAuth) {
     return (
@@ -26,7 +32,10 @@ function App() {
         count={count}
         setCount={setCount}
       />
-     <Main />
+      <Main
+        boxes={boxes}
+        setBoxes={setBoxes}
+      />
     </div>
   )
 }

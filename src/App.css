@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -167,4 +168,14 @@ nav {
 
 .main-img {
   height: 100%;
+}
+
+.target-box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: dashed 5px black;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
 }
