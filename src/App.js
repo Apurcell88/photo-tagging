@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Auth from './components/Auth';
 import Nav from './components/Nav';
@@ -35,6 +35,7 @@ function App() {
       <Main
         boxes={boxes}
         setBoxes={setBoxes}
+        
       />
     </div>
   )

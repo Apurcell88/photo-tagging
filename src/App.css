@@ -170,6 +170,14 @@ nav {
   height: 100%;
 }
 
+.target-container {
+  /* position: absolute; */
+  width: 100px;
+  height: 50px;
+  /* background-color: blue; */
+  /* transform: translate(-50%, -50%); */
+}
+
 .target-box {
   position: absolute;
   width: 40px;
@@ -178,4 +186,36 @@ nav {
   border: dashed 5px black;
   border-radius: 20px;
   transform: translate(-50%, -50%);
+}
+
+.selection-dropdown {
+  position: absolute;
+  color: white;
+  height: 5rem;
+  width: 6rem;
+  background-color: rgba(95, 93, 93, 0.8);
+  margin-left: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.left-side {
+  margin-left: 0.7rem;
+}
+
+.right-side {
+  margin-left: -6rem;
+}
+
+.character-title {
+  padding-left: 0.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s background ease-in;
+}
+
+.character-title:hover {
+  background: rgba(355, 355, 355, 0.5);
 }
