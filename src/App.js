@@ -13,6 +13,7 @@ function App() {
 
   // Main state
   const [boxes, setBoxes] = useState([]);
+  const [click, setClick] = useState(false);
 
   if (!isAuth) {
     return (
@@ -31,7 +32,8 @@ function App() {
       <Main
         boxes={boxes}
         setBoxes={setBoxes}
-        
+        click={click}
+        setClick={setClick}
       />
     </div>
   )

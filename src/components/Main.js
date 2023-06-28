@@ -5,12 +5,15 @@ const Main = (props) => {
   const {
           boxes,
           setBoxes,
+          click,
+          setClick
         } = props;
 
   const handleClick = ({ pageX, pageY }) => {
     // setBoxes((boxes) => [...boxes, { x: pageX, y: pageY }]);
     setBoxes(() => [{x: pageX, y: pageY}]);
-    console.log(boxes);
+    // console.log(boxes);
+    setClick(!click);
   }
 
   
@@ -25,7 +28,7 @@ const Main = (props) => {
         alt="video game/cartoon characters"
         className='main-img'
       />
-      {boxes.map((box) => {
+      {/* {boxes.map((box) => {
         return (
           <div className='target-container'>
             <div className='target-box' style={{ left: box.x, top: box.y }}></div>
@@ -41,7 +44,28 @@ const Main = (props) => {
             </div>
           </div>
         )
-      })}
+      })} */}
+
+      {
+        click ?
+        boxes.map((box) => {
+          return (
+            <div className='target-container'>
+              <div className='target-box' style={{ left: box.x, top: box.y }}></div>
+              <ul
+                className={box.x < 200 ?
+                          ['selection-dropdown', 'left-side'].join(' ') :
+                          ['selection-dropdown', 'right-side'].join(' ')}
+                style={{left: box.x, top: box.y}}
+              >
+                <li className='character-title'>Megaman</li>
+                <li className='character-title'>Fry</li>
+                <li className='character-title'>Ryuk</li>
+              </ul>
+            </div>
+          ) 
+        }) : ''
+      }
     </div>
   );
 }
