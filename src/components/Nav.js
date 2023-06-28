@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from "react";
 import { auth } from "../config/firebase";
 import { signOut } from "firebase/auth";
 import { useStopwatch } from 'react-timer-hook';
@@ -20,15 +19,6 @@ const Nav = (props) => {
         console.error(err);
     }
   }
-
-  // const startTimer = () => {
-  //   setCount(prev => prev + 1);
-  // }
-
-  // Starts the timer on page load
-  // useEffect(() => {
-  //   setInterval(startTimer, 1000);
-  // }, []);
 
   return (
     <nav>

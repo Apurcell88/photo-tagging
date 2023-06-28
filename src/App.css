@@ -51,7 +51,18 @@ table {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('C:/Users/apurc/Documents/odinReact/photo-tagging/src/images/photo-tagging-homepage.jpg');
+  width: 100vw;
+}
+
+.sign-in-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('C:/Users/apurc/Documents/odinReact/photo-tagging/src/images/photo-tagging-image.jpg');
+  z-index: 1;
+  opacity: 0.25;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sign-in-title {
@@ -59,19 +70,23 @@ table {
   top: 0;
   margin-top: 3rem;
   font-size: 2rem;
-  color: white;
+  color: rgb(199, 129, 129);
+  z-index: 5;
+
 }
 
 .us {
-  color: #ee9f27;
+  color: #2777ee;
 }
 
 .sign-in-description {
   position: absolute;
   top: 0;
   margin-top: 6.5rem;
-  color: white;
+  color: rgb(199, 129, 129);
+  font-size: 1.2rem;
   letter-spacing: 1px;
+  z-index: 5;
 }
 
 .sign-in-info {
@@ -81,11 +96,12 @@ table {
   gap: 25px;
   font-size: 1.7rem;
   border-radius: 5px;
+  z-index: 5;
 }
 
 .sign-in-text {
   letter-spacing: 0.3px;
-  color: rgb(88, 140, 238);
+  color: rgb(199, 129, 129);
 }
 
 .sign-in-btn {
@@ -93,7 +109,7 @@ table {
   height: 2.5rem;
   border-radius: 10px;
   border: none;
-  background-color: rgb(88, 140, 238);
+  background-color: #2777ee;
   color: white;
   font-size: 1.2rem;
 }

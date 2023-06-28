@@ -19,6 +19,7 @@ const Auth = (props) => {
 
   return (
     <div className="sign-in-container">
+      <div className="sign-in-background"></div>
       <h1 className="sign-in-title">Find<span className="us">Us</span></h1>
       <p className="sign-in-description">A Where's Waldo style game</p>
       <div className="sign-in-info">
