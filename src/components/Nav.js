@@ -1,11 +1,13 @@
-// import { useState } from 'react';
+import React from 'react';
 import { useEffect } from "react";
 import { auth } from "../config/firebase";
 import { signOut } from "firebase/auth";
+import { useStopwatch } from 'react-timer-hook';
 
 const Nav = (props) => {
 //   console.log(auth);
-  const { setIsAuth, count, setCount } = props;
+  const { setIsAuth } = props;
+  const { hours, minutes, seconds } = useStopwatch({ autoStart: true });
   
   // FUNCTIONS
 
@@ -19,14 +21,14 @@ const Nav = (props) => {
     }
   }
 
-  const startTimer = () => {
-    setCount(prev => prev + 1);
-  }
+  // const startTimer = () => {
+  //   setCount(prev => prev + 1);
+  // }
 
   // Starts the timer on page load
-  useEffect(() => {
-    setInterval(startTimer, 1000);
-  }, []);
+  // useEffect(() => {
+  //   setInterval(startTimer, 1000);
+  // }, []);
 
   return (
     <nav>
@@ -40,7 +42,7 @@ const Nav = (props) => {
         </button>
       </div>
       <div className="nav-timer">
-        <p className="nav-user-display">{count} seconds</p>
+        <p className="nav-user-display">{hours} : {minutes} : {seconds}</p>
       </div>
       <div className="nav-num-characters-container">
         <p className="nav-num-characters">3</p>

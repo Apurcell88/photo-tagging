@@ -11,9 +11,6 @@ function App() {
   // Auth state
   const [isAuth, setIsAuth] = useState(false);
 
-  // Nav state
-  const [count, setCount] = useState(0);
-
   // Main state
   const [boxes, setBoxes] = useState([]);
 
@@ -29,9 +26,8 @@ function App() {
     <div>
       <Nav
         setIsAuth={setIsAuth}
-        count={count}
-        setCount={setCount}
       />
+      
       <Main
         boxes={boxes}
         setBoxes={setBoxes}
