@@ -14,6 +14,7 @@ function App() {
   // Main state
   const [boxes, setBoxes] = useState([]);
   const [click, setClick] = useState(false);
+  const [coordinates, setCoordinates] = useState({});
 
   if (!isAuth) {
     return (

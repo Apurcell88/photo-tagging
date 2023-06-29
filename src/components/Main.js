@@ -9,14 +9,16 @@ const Main = (props) => {
           setClick
         } = props;
 
+  // FUNCTIONS
+
+  // Determine the coordinates of user click
   const handleClick = ({ pageX, pageY }) => {
     // setBoxes((boxes) => [...boxes, { x: pageX, y: pageY }]);
     setBoxes(() => [{x: pageX, y: pageY}]);
     // console.log(boxes);
     setClick(!click);
+    console.log(boxes);
   }
-
-  
 
   return (
     <div
