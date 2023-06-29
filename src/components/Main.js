@@ -61,7 +61,7 @@ const Main = (props) => {
                 style={{left: box.x, top: box.y}}
               >
                 <li className='character-title'>Megaman</li>
-                <li className='character-title'>Fry</li>
+                <li className='character-title'>Mario</li>
                 <li className='character-title'>Ryuk</li>
               </ul>
             </div>

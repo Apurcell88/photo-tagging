@@ -1,11 +1,18 @@
 import React from 'react';
+import { useState } from 'react';
 import { auth } from "../config/firebase";
 import { signOut } from "firebase/auth";
 import { useStopwatch } from 'react-timer-hook';
 
 const Nav = (props) => {
 //   console.log(auth);
-  const { setIsAuth } = props;
+  const {
+    setIsAuth,
+    characters,
+    displayCharDropdown,
+    setDisplayCharDropdown
+   } = props;
+
   const { hours, minutes, seconds } = useStopwatch({ autoStart: true });
   
   // FUNCTIONS
@@ -35,7 +42,14 @@ const Nav = (props) => {
         <p className="nav-user-display">{hours} : {minutes} : {seconds}</p>
       </div>
       <div className="nav-num-characters-container">
-        <p className="nav-num-characters">3</p>
+        <button
+          className="nav-num-characters-btn"
+          onClick={() => {
+            setDisplayCharDropdown(!displayCharDropdown);
+          }}
+        >
+          {characters.length}
+        </button>
       </div>
     </nav>
   )

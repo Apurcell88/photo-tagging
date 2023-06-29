@@ -168,11 +168,14 @@ nav {
   color: white;
 }
 
-.nav-num-characters {
+.nav-num-characters-btn {
   background-color: #ee9f27;
-  padding: 0.8rem;
-  border-radius: 15px;
-  font-size: 1.2rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  border: none;
+  height: 3rem;
+  width: 3rem;
 }
 
 /* -------------- MAIN STYLES -------------- */
@@ -234,4 +237,23 @@ nav {
 
 .character-title:hover {
   background: rgba(355, 355, 355, 0.5);
+}
+
+/* -------------- CHARACTERS DROPDOWN STYLES -------------- */
+.dropdown-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  align-items: flex-end;
+  margin: 0 auto;
+  position: absolute;
+  left: 40px;
+  border-radius: 10px;
+}
+.dropdown-character-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 2rem;
+  /* background-color: white; */
 }
