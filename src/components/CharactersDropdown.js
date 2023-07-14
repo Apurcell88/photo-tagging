@@ -7,10 +7,11 @@ const CharacterDropdown = (props) => {
         return (
           <div className="dropdown-character-container">
             <img
-              src={character}
+              src={character.photo}
               alt="Megaman"
               className="dropdown-character-img"
             />
+            <p>{character.name}</p>
           </div>
         )
       })}

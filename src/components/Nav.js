@@ -30,7 +30,8 @@ const Nav = (props) => {
   return (
     <nav>
       <div className="nav-user-info-container">
-        <h1 className="nav-user-display">{auth.currentUser.displayName}</h1>
+        {/* <h1 className="nav-user-display">{auth.currentUser.displayName}</h1> */}
+        <h1 className="nav-user-display">Find<span className='us-orange'>Us</span></h1>
         <button
           className="nav-sign-out-btn"
           onClick={signOutFromGoogle}
