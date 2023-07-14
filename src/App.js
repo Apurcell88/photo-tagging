@@ -16,7 +16,7 @@ function App() {
   const [isAuth, setIsAuth] = useState(false);
 
   // Nav state
-  const [characters, setCharacters] = useState([megaman, mario, ryuk]);
+  const [characters, setCharacters] = useState([{photo: megaman, name: 'Megaman'}, {photo: mario, name: 'Mario'}, {photo: ryuk, name: 'Ryuk'}]);
   const [displayCharDropdown, setDisplayCharDropdown] = useState(false);
 
   // Main state
@@ -28,6 +28,7 @@ function App() {
     return (
       <Auth
         setIsAuth={setIsAuth}
+        characters={characters}
       />
     )
   }
